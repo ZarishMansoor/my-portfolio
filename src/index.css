@@ -1,25 +1,51 @@
-/* index.css */
+/* src/index.css */
 
-/* Reset & global setup */
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* Apply global font and smoothing */
-body {
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #ffffff; /* optional background */
-  color: #1a1a1a; /* optional default text color */
-  line-height: 1.6;
 }
 
-/* Code font */
+/* Default code styling */
 code {
-  font-family: 'Source Code Pro', Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Add global responsive behavior */
+* {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  h1, h2, h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .navbar, .header, .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }

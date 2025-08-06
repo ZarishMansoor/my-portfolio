@@ -1,3 +1,4 @@
+/* General resets and base styles */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
@@ -5,6 +6,39 @@ body {
   background: #f9f9f9;
 }
 
+/* Background container applied in App.js */
+.app-background {
+  background-image: url(/bg-image.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/* Main wrapper for all content */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Content padding inside the container */
 .content {
   padding: 20px;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+}
+
+/* Code block styling (optional for highlighting code) */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }

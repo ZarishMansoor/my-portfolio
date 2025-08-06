@@ -1,4 +1,4 @@
-/* src/pages/Home.css */
+/* Home.css */
 
 .home {
   display: flex;
@@ -7,6 +7,8 @@
   padding: 60px;
   background: linear-gradient(to right, #e3f2fd, #ffffff);
   min-height: 100vh;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .home-content {
@@ -39,6 +41,7 @@
 
 .buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
@@ -69,8 +72,25 @@
 }
 
 .home-image img {
-  width: 300px;
+  width: 280px;
   height: auto;
   border-radius: 50%;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .home-content {
+    padding-right: 0;
+  }
+
+  .home-image img {
+    width: 220px;
+    margin-top: 30px;
+  }
 }
