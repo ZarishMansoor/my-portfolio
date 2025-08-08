@@ -19,6 +19,7 @@ function Home() {
         <div className="buttons">
           <a href="/Projects" className="btn">View Projects</a>
           <a href="/Contact" className="btn btn-outline">Contact Me</a>
+          <a href="/Zarish Mansoor.pdf" className="btn btn-download" download>Download CV</a>
         </div>
       </div>
 

@@ -71,6 +71,17 @@
   color: white;
 }
 
+/* New Download Button Style */
+.btn-download {
+  background-color: #4caf50; /* Green */
+  color: white;
+  border: none;
+}
+
+.btn-download:hover {
+  background-color: #388e3c;
+}
+
 .home-image img {
   width: 280px;
   height: auto;
@@ -92,5 +103,9 @@
   .home-image img {
     width: 220px;
     margin-top: 30px;
+  }
+
+  .buttons {
+    justify-content: center;
   }
 }
